@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котлетка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container container--flex container--header">
+            <img src="img/logo.png" alt="logo" class="header--logo">
+            <nav class="header--navigation container--flex ">
+                <ul class="header--link--items container--flex">
+                    <li class="header--link--item"><a href="index.html" class="header--link">Главная</a></li>
+                    <li class="header--link--item"><a href="catalog.html" class="header--link">Каталог</a></li>
+                    <li class="header--link--item"><a href="aboutus.html" class="header--link">О нас</a></li>
+                    <li class="header--link--item"><a href="#" class="header--link">Помощь</a></li>
+                </ul>
+                <img src="img/basket.png" alt="basket" class="header--bascet">
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="ms--1">
+            <div class="container container--flex container--ms-1">
+                <div class="ms--1--content-1">
+                    <h1 class="ms--1--content--h1">Доставка котлет в Ставпололе</h1>
+                    <p class="ms--1--content--p">Мы доставляем самые разные виды котлет</p>
+                </div>
+                <img src="img/main.png" alt="main" class="ms--1--content-img">
+            </div>
+        </section>
+        <section class="ms--2">
+            <div class="ms--2--bg"></div>
+            <h2 class="ms--2--h2">Наша продукция</h2>
+            <div class="container container--flex container--ms--2">
+                <div class="ms--2--name container--flex">
+                    <button class="ms--2--button" type="button" data-src='img/1-cotleta.jpg' data-desc="Куриный фарш, лук репка, картофель, чеснок, соль, масло растительное, яйцо куриное, сухари панировочные">Куриные котлеты</button>
+                    <button class="ms--2--button" type="button" data-src="img/2-cotleta.jpg" data-desc="Свинной фарш, Говяжий фарш, лук репка, соль, масло растительное, яйцо куриное, белый хлеб, перец">Свинно-говяжие котлеты</button>
+                    <button class="ms--2--button" type="button" data-src="img/3-cotleta.jpg" data-desc="Свинной фарш, яйцо куриное, репчатый лук, черный молотый перец, соль, растительное масло">Свинные котлеты</button>
+                    <button class="ms--2--button" type="button" data-src="img/4-cotleta.jpg" data-desc="Куриный фарш, шампиньоны, орехи грецкие, яйца, мука, майонез, соль, перец, масло растительное">Котлеты Эстонские</button>
+                    <button class="ms--2--button" type="button" data-src="img/5-cotleta.png" data-desc="Говяжий фарш, сало, чеснок, соль, перец черный молотый, сухари панировочные, жир, масло">Сиченики полтавские</button>
+                    <button class="ms--2--button" type="button" data-src="img/6-cotleta.png" data-desc="Cвино-говяжий фарш, лук, паприка, сода, вода, сыр брынза, грудинка, зелень, чеснок, лимон, соль и перец">Уштипцы</button>
+                    <button class="ms--2--button" type="button" data-src="img/7-cotleta.jpg" data-desc="Свинной фарш, орехи грецкие, сыр твердый, яйцо, лук, сухари, соль, перец черный, масло подсолнечное">Котлеты “пальчики”</button>
+                </div>
+
+                <div class="ms--2--container-img">
+                    <img src="img/1-cotleta.jpg" alt="#" class="ms--2--img">
+                    <h2 class="ms--2-name-img">Куриные котлеты</h2>
+                    
+                </div>
+                
+
+                <div class="ms--2--description">
+                    <h3>Состав</h3>
+                    <p class="ms--2--desc--p">Куриный фарш, лук репка, картофель, чеснок, соль, масло растительное, яйцо куриное, сухари панировочные</p>
+                </div>
+            </div>
+        </section>
+        <section class="ms--3">
+            <div class="container container--ms--3">
+                <h2 class="ms--3--h2">Причины выбирать нас</h2>
+                <div class="ms--3--main--content">
+                    <div class="ms--3--content-item">
+                        <h3 class="ms--3--h3">Качество</h3>
+                        <img src="img/pr--1.png" alt="" class="ms--3--img">
+                    </div>
+                    <div class="ms--3--content-item">
+                        <h3 class="ms--3--h3">Доставка</h3>
+                        <img src="img/pr--2.png" alt="" class="ms--3--img">
+                    </div>
+                    <div class="ms--3--content-item container--flex">
+                        <div class="ms--3--content-item-2">
+                            <h3 class="ms--3--h3">Стоимость</h3>
+                            <img src="img/pr--3.png" alt="" class="ms--3--img">
+                        </div>
+                        <div class="ms--3--content-item-2">
+                            <h3 class="ms--3--h3">Постоянные акции</h3>
+                        <img src="img/pr--4.png" alt="" class="ms--3--img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script>
+        var image = document.querySelector('.ms--2--img');
+        var ms2Buttons = document.querySelectorAll('button.ms--2--button');
+        var textdescr = document.querySelector('.ms--2--desc--p');
+        var nameImg = document.querySelector('.ms--2-name-img')
+        
+        var addThumbnailClickHandler = function (ms2Button, photo, desc, name) {
+            ms2Button.addEventListener('click', function() {
+                image.src = photo;
+                textdescr.textContent = desc;
+                nameImg.textContent = name
+            });
+        };
+        
+        for (var i = 0; i < ms2Buttons.length; i++ ) {
+            addThumbnailClickHandler(ms2Buttons[i], ms2Buttons[i].dataset.src, ms2Buttons[i].dataset.desc, ms2Buttons[i].textContent)
+        };
+    </script>
+</body>
+</html>
